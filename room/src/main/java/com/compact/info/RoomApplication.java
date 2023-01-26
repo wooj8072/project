@@ -6,7 +6,7 @@ import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 
 @SpringBootApplication
 @EnableJpaAuditing
-//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
+//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
 public class RoomApplication {
 
 	public static void main(String[] args) {
