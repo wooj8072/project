@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+	<div th:fragment="header">
+		<header>
+		  <div id="hdLogo">
+		        <a href=""><img th:src="@{main/img/logo.svg}"></a>
+		        <div class="hdLeft">
+		            <ul>
+		            	<li><a href="loginForm">테스트</a></li>
+		            	<li><a href="join">테스트</a></li>
+		            </ul>
+		        </div>
+		        
+		        <div id="hdRight">
+		            <ul>
+		            	<li><a href="#" onclick=""><img th:src=@{main/img/facebook.svg}></a></li>
+		            	<li><a href="#" onclick=""><img th:src=@{main/img/instagram.svg}></a></li>
+		            	<li><a href="#" onclick=""><img th:src=@{main/img/youtube.svg}></a></li>
+		            </ul>
+		        </div>
+		    </div>
+			<nav>
+				<div id="openNav">
+					<ul>
+			            <li><a href="">자유 게시판</a><div class="orderLiDeco"></div></li>
+			            <li><a href="">새 소식</a><div class="orderLiDeco"></div></li>
+			            <li><a href="">FT</a><div class="orderLiDeco"></div></li>
+			            <li><a href="">위치 검색</a><div class="orderLiDeco"></div></li>
+			            <li><a href="">고객 센터</a><div class="orderLiDeco"></div></li>
+			        </ul>
+			        <div id="detailNav">
+						<ul>
+							<li><a href="">추억</a></li>
+							<li><a href="">일정</a></li>
+						</ul>
+						<ul>
+							<li><a href="">이벤트 · 프로모션</a></li>
+							<li><a href="">공지사항</a></li>
+						</ul>
+						<ul>
+							<li><a href="">브랜드 소개</a></li>
+						</ul>
+						<ul>
+							<li><a href="">지역 검색</a></li>
+							<li><a href="">매장명 검색</a></li>
+						</ul>
+						<ul>
+							<li><a href="">자주하는 질문</a></li>
+							<li><a href="">문의하기</a></li>
+						</ul>
+		           </div>
+				</div>
+		    </nav>
+		</header>
+		    <script>
+			    function SNS() {
+			    	alert("준비중 입니다.");
+			    }
+		    </script>
+	</div>
+</html>

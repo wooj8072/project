@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+	<div th:fragment="footer">
+		<footer>
+			<div id="ftHead">
+				<ul>
+					<li><a href="#" onclick="SNS()">이용약관</a></li>
+					<li><a href="#" id="pipp" onclick="SNS()">개인정보처리방침</a></li>
+					<li><a href="#" onclick="SNS()">위치기반서비스</a></li>
+					<li><a href="#" onclick="SNS()">FT 방침</a></li>
+					<li><a href="#" onclick="SNS()">2023/01/09</a></li>
+					
+				</ul>
+			</div>
+			<div id="ftBody">
+				<div id="ftBodyLeft">
+					<img th:src=@{main/img/logo(w).svg}>
+				</div>
+				<div id="ftBodyRight">
+					<p>경기도 용인시 수지구 진산로 24번길  | 사업자등록번호 : 111-11-11111</p>
+					<p>대표전화번호 : 0507-1487-2111 | 대표팩스번호 : 0507-1487-2111 | 대표이메일 : bhb@ft.com</p>
+					<p>COPYRIGHT FT. ALL RIGHTS RESERVED.</p>
+				</div>
+			</div>
+		</footer>
+	</div>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" 
+	  xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layouts/default}">
+	<div layout:fragment="content">
+		<section>
+	    	<div id="mainBanner"> <!-- 메인배너 ↓ -->
+	            <div class="swiper mySwiper">  
+	                <div class="swiper-wrapper">
+	                    <div class="swiper-slide"> <!-- 메인배너1 ↓ -->
+	                        <div class="mainBannerImg"><img th:src=@{main/img/history_img.jpg}></div>
+	                    </div>
+	                    <div class="swiper-slide"> <!-- 메인배너2 ↓ -->
+	                        <div class="mainBannerImg"><img th:src=@{main/img/history_img.jpg}></div>
+	                    </div>
+	                    <div class="swiper-slide"> <!-- 메인배너3 ↓ -->
+	                        <div class="mainBannerImg"><img th:src=@{main/img/history_img.jpg}></div>
+	                    </div>
+	                </div>
+	            </div>
+	            <a href="#" onclick="return false" id="mainBtL"><img th:src=@{main/img/mainBt.svg}></a>
+	            <a href="#" onclick="return false" id="mainBtR"><img th:src=@{main/img/mainBt.svg}></a>
+	            <a href="order?order=home" id="mainOrder"><img th:src="@{main/img/mainConn.svg}"><span>접속하기</span></a>
+	        </div>
+	        <div id="mainMenu">
+		        <div id="mainMenuTitleDeco"><p>FT's History</p></div>
+	        	<div class="swiper mySwiper2">  
+	                <div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<div class="mainMenus"><img th:src=@{main/img/ul.jpg}><p class="mainMenusName">울릉도</p><p class="mainMenusInfo">2022년 8월 16일 오전 10:30<br> 울릉도에서 여름휴가</p></div>
+			        		<div class="mainMenus"><img th:src=@{main/img/ul.jpg}><p class="mainMenusName">울릉도</p><p class="mainMenusInfo">2022년 8월 16일 오전 10:30<br> 울릉도에서 여름휴가</p></div>
+			        		<div class="mainMenus"><img th:src=@{main/img/ul.jpg}><p class="mainMenusName">울릉도</p><p class="mainMenusInfo">2022년 8월 16일 오전 10:30<br> 울릉도에서 여름휴가</p></div>
+			        		<div class="mainMenus"><img th:src=@{main/img/ul.jpg}><p class="mainMenusName">울릉도</p><p class="mainMenusInfo">2022년 8월 16일 오전 10:30<br> 울릉도에서 여름휴가</p></div>
+		        		</div>
+		        		<div class="swiper-slide">
+							<div class="mainMenus"><img th:src=@{main/img/ul.jpg}><p class="mainMenusName">울릉도</p><p class="mainMenusInfo">2022년 8월 16일 오전 10:30<br> 울릉도에서 여름휴가</p></div>
+			        		<div class="mainMenus"><img th:src=@{main/img/ul.jpg}><p class="mainMenusName">울릉도</p><p class="mainMenusInfo">2022년 8월 16일 오전 10:30<br> 울릉도에서 여름휴가</p></div>
+			        		<div class="mainMenus"><img th:src=@{main/img/ul.jpg}><p class="mainMenusName">울릉도</p><p class="mainMenusInfo">2022년 8월 16일 오전 10:30<br> 울릉도에서 여름휴가</p></div>
+			        		<div class="mainMenus"><img th:src=@{main/img/ul.jpg}><p class="mainMenusName">울릉도</p><p class="mainMenusInfo">2022년 8월 16일 오전 10:30<br> 울릉도에서 여름휴가</p></div>
+		        		</div>
+	                </div>
+	            </div>
+	            <a href="#" onclick="return false" id="mainMenuBtL"><img th:src=@{main/img/mainMenuBt.svg}></a>
+	            <a href="#" onclick="return false" id="mainMenuBtR"><img th:src=@{main/img/mainMenuBt.svg}></a>
+	        </div>
+	        <div id="mainEtc">
+	        	<div id="mainEtcNotice">
+	        		<div>
+	        			<div id="mainEtcNoticeTitleDeco"><p>What's New</p></div>
+	        			<p>FT 매거진<br> 소식통</p>
+	        		</div>
+	        		<div>
+	        			<a href="/sandme-0.0.1-SNAPSHOT/noticeView?noticeNum=9&amp;section=1&amp;page=1">
+	        				<span>작성 테스트</span>
+	        				
+	       				</a><br>
+	        			<a href="/sandme-0.0.1-SNAPSHOT/noticeView?noticeNum=6&amp;section=1&amp;page=1">
+	        				<span>작성 테스트</span>
+	        				
+	       				</a><br>
+	        			<a href="/sandme-0.0.1-SNAPSHOT/noticeView?noticeNum=5&amp;section=1&amp;page=1">
+	        				<span>작성 테스트</span>
+	        				
+	       				</a><br>
+	        			<a href="/sandme-0.0.1-SNAPSHOT/noticeView?noticeNum=4&amp;section=1&amp;page=1">
+	        				<span>작성 테스트</span>
+	        				
+	       				</a><br>
+	        			<a href="/sandme-0.0.1-SNAPSHOT/noticeList" style="color: #C9CACA;"><span>more</span></a>
+	        		</div>
+	        	</div>
+				<div id="mainEtcShop">
+					<p>FT 찾기</p>
+					<p>What's going on</p>
+					<a href="/s andme-0.0.1-SNAPSHOT/map?map=address"><span>more</span></a>
+					<img th:src=@{main/img/location.svg}>
+				</div>
+	        </div>
+	    </section>
+	    <script>
+		    let bt_pv = $("#mainBtL"); /* 메인 배너 스크립트 ↓ */
+		    let bt_nt = $("#mainBtR");
+		    let swiper = new Swiper(".mySwiper", {navigation: {nextEl: "#mainBtR", prevEl: "#mainBtL"},
+		        on: {activeIndexChange: function() {
+		            if (this.realIndex == 0) {
+		                bt_pv.css("opacity","0.25");
+		            } else if (this.realIndex == 1) {
+		                bt_pv.css("opacity","1");
+		                bt_nt.css("opacity","1");
+		            } else {
+		                bt_nt.css("opacity","0.25");
+		            }
+		        }}
+		    });
+		    
+		    let bt_pv2 = $("#mainMenuBtL"); /* 메인 메뉴 스크립트 ↓ */
+		    let bt_nt2 = $("#mainMenuBtR");
+		    let swiper2 = new Swiper(".mySwiper2", {navigation: {nextEl: "#mainMenuBtR", prevEl: "#mainMenuBtL"},
+		        on: {activeIndexChange: function() {
+		            if (this.realIndex == 0) {
+		                bt_pv2.css("opacity","0.25");
+		                bt_nt2.css("opacity","1");
+		            } else {
+						bt_pv2.css("opacity","1");
+		                bt_nt2.css("opacity","0.25");
+		            }
+		        }}
+		    });
+		    
+		    function SNS() {
+		    	alert("준비중 입니다.");
+		    }
+	    </script>
+	</div>	
+</html>
