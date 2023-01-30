@@ -15,6 +15,8 @@ import lombok.Getter;
 @MappedSuperclass
 @EntityListeners(value = AuditingEntityListener.class)
 public class CommonDate {
+	//공통 date
+	
 	@CreatedDate
 	private LocalDateTime registeredAt;
 
